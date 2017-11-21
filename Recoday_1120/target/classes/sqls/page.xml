@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="hk.lab5.rd">
+
+	<select id="selectPageList" resultType="pageDto">
+		SELECT PAGESEQ, DISEQ, REGDATE, NICK, TITLE, CONTENT, WEATHER, MOOD, DEL
+		FROM RDPAGE 
+		ORDER BY PAGESEQ
+	</select>
+
+</mapper>
