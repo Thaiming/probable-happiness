@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import hk.lab5.rd.dtos.NoticeDto;
 import hk.lab5.rd.dtos.PageDto;
 import hk.lab5.rd.model.IService;
 
@@ -24,10 +25,10 @@ public class BoardController {
 		return "hello";
 	}
 	
-	@RequestMapping(value="/pagelist.do", method=RequestMethod.GET)
-	public String selectPageList(Model model){
-		List<PageDto> list = iservice.selectPageList();
+	@RequestMapping(value="/noticeList.do", method=RequestMethod.GET)
+	public String noticeList(Model model){
+		List<NoticeDto> list = iservice.noticeList();
 		model.addAttribute("list", list);
-		return "pageList";
+		return "noticeList";
 	}
 }

@@ -6,10 +6,10 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 
 <typeAliases>
-	<typeAlias type="hk.lab5.rd.dtos.PageDto" alias="PageDto"/>
+	<typeAlias type="hk.lab5.rd.dtos.NoticeDto" alias="NoticeDto"/>
 </typeAliases>
 
 <mappers>
-	<mapper resource="/sqls/page.xml"/>
+	<mapper resource="/sqls/Notice.xml"/>
 </mappers>
 </configuration>

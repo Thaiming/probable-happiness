@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>hello페이지</h2>
+<h2>레코데이</h2>
+<a href="./answerList.do">공지사항</a>
 </body>
 </html>
